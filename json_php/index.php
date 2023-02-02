@@ -17,9 +17,9 @@
         xmlhttp.open("GET", "demo_file.php");
 
         xmlhttp.onload = function() {
-            const myObj = JSON.parse(this.responseText);
-            console.log(myObj);
-            document.getElementById("demo").innerHTML = myObj.age;
+            // const myObj = JSON.parse(this.responseText);
+            console.log(this.responseText);
+            // document.getElementById("demo").innerHTML = myObj.age;
         }
 
         xmlhttp.send();

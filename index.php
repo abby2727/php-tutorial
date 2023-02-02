@@ -21,10 +21,5 @@ $json = '{
 $json_decoded = json_decode($json);
 
 foreach ($json_decoded->address as $key => $value) {
-    // echo $key . " : " . $value . "<br>";
-    echo $value . "<br>";
+    echo "$value <br>";
 }
-
-// echo "If you view the source of output frame \r\n you will find a newline in this string.";
-// echo "<br>";
-// echo nl2br("You will find the \n newlines in this string \r\n on the browser window.");

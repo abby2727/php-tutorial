@@ -21,5 +21,5 @@ $json = '{
 $json_decoded = json_decode($json);
 
 foreach ($json_decoded->address as $key => $value) {
-    echo "$value <br>";
+    echo "$value \n";
 }

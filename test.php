@@ -1,25 +1,34 @@
-<!DOCTYPE html>
-<html>
+<?php
 
-<body>
+$categories = [
+    [
+        'id' => 1, 'name' => 'Furniture', 'subcategories' => [
+            ['id' => 1, 'name' => 'Beds'],
+            ['id' => 2, 'name' => 'Benches'],
+            ['id' => 3, 'name' => 'Cabinets'],
+            ['id' => 4, 'name' => 'Chairs & Stools'],
+            ['id' => 5, 'name' => 'Consoles & Desks'],
+            ['id' => 6, 'name' => 'Sofas'],
+            ['id' => 7, 'name' => 'Tables']
+        ]
+    ],
+    [
+        'id' => 2, 'name' => 'Lighting', 'subcategories' => [
+            ['id' => 1, 'name' => 'Ceiling'],
+            ['id' => 2, 'name' => 'Floor'],
+            ['id' => 3, 'name' => 'Table'],
+            ['id' => 4, 'name' => 'Wall']
+        ]
+    ],
+    [
+        'id' => 3, 'name' => 'Accessories', 'subcategories' => [
+            ['id' => 1, 'name' => 'Mirrors'],
+            ['id' => 2, 'name' => 'Outdoor & Patio'],
+            ['id' => 3, 'name' => 'Pillows'],
+            ['id' => 4, 'name' => 'Rugs'],
+            ['id' => 5, 'name' => 'Wall Decor & Art'],
+        ]
+    ]
+];
 
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        Name: <input type="text" name="fname">
-        <input type="submit">
-    </form>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // collect value of input field
-        $name = htmlspecialchars($_REQUEST['fname']);
-        if (empty($name)) {
-            echo "Name is empty";
-        } else {
-            echo '<h1>' . $name . '</h1>';
-        }
-    }
-    ?>
-
-</body>
-
-</html>
+echo json_encode($categories);

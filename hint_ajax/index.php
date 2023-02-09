@@ -6,10 +6,6 @@
 </head>
 
 <body>
-
-    <!-- <h2>The XMLHttpRequest Object</h2>
-    <h3>Start typing a name in the input field below:</h3> -->
-
     <p>First name: <input type="text" id="txt1"></p>
     <p>Suggestions: <span id="txtHint">Suggestion here...</span></p>
 
@@ -33,7 +29,6 @@
             xhttp.send();
         }
     </script>
-
 </body>
 
 </html>

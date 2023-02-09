@@ -1,14 +1,5 @@
 <?php
 
-$name = 'John Doe';
-
-// * Using PHP built-in functions
-echo strrev($name);
-echo "\n\n";
-
-// * Using trad loop
-
-// Functional
 function revStr($name2)
 {
     $reverse_string = "";

@@ -1,8 +1,14 @@
 <?php
 
-$cars = array("Volvo", "BMW", "Toyota");
-// var_dump($cars);
+// * index array
+$array = array("Volvo", "BMW", "Toyota");
+echo $array[0];
+// foreach ($array as $arr) {
+//     echo "$arr \n";
+// }
 
-foreach ($cars as $car) {
-    echo "$car \n";
-}
+echo "\n";
+
+// * associative array
+$age = array("Peter" => 35, "Ben" => 37, "Joe" => 43);
+echo $age["Peter"];

@@ -8,7 +8,7 @@ function revStr($name2)
     }
     return $reverse_string;
 }
-echo revStr("Abdul");
+echo revStr("Abdul Fahad A. Pangandaman");
 
 // Imperative
 // $reverse_string = "";

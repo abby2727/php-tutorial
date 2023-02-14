@@ -1,7 +1,12 @@
 <?php
 
-$reverse_string = "";
-for ($i = strlen($name) - 1; $i >= 0; $i--) {
-    $reverse_string .= $name[$i];
+function revStr($text)
+{
+    $myText = "";
+    for ($i = strlen($text) - 1; $i >= 0; $i--) {
+        $myText .= $text[$i];
+    }
+    return $myText;
 }
-echo $reverse_string;
+
+echo revStr("Abdul Fahad");
